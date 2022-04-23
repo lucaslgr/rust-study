@@ -1,0 +1,1 @@
+/home/guimaraes/projects/rust/course-rust-doung-milford-yt/rust-strings-vs-str-slices/target/debug/rust-strings-vs-str-slices: /home/guimaraes/projects/rust/course-rust-doung-milford-yt/rust-strings-vs-str-slices/src/main.rs

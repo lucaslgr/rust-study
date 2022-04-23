@@ -1,0 +1,1 @@
+/home/guimaraes/projects/rust/course-rust-doung-milford-yt/functions-and-procedures/target/debug/functions-and-procedures: /home/guimaraes/projects/rust/course-rust-doung-milford-yt/functions-and-procedures/src/main.rs
