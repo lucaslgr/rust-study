@@ -1,0 +1,1 @@
+/home/guimaraes/projects/rust/course-rust-doung-milford-yt/structs-traits-impl/target/debug/structs-traits-impl: /home/guimaraes/projects/rust/course-rust-doung-milford-yt/structs-traits-impl/src/main.rs /home/guimaraes/projects/rust/course-rust-doung-milford-yt/structs-traits-impl/src/random_info.rs

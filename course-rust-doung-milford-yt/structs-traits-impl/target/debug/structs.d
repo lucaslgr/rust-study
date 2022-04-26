@@ -1,0 +1,1 @@
+/home/guimaraes/projects/rust/course-rust-doung-milford-yt/structs/target/debug/structs: /home/guimaraes/projects/rust/course-rust-doung-milford-yt/structs/src/main.rs /home/guimaraes/projects/rust/course-rust-doung-milford-yt/structs/src/random_info.rs
