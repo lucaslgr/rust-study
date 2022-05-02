@@ -3,7 +3,6 @@ enum Payment {
   Debit(f32),
   Credit(f32, String),
   Crypto(CryptoData),
-  Pix { account_key: String, amount: f32 },
 }
 
 struct CryptoData {
@@ -12,10 +11,12 @@ struct CryptoData {
 }
 
 fn main() {
-  let payment_method: Payment = Payment::Pix {
-    account_key: String::from("932i13-3213912-312321"),
-    amount: 32.03,
-  };
+  // let payment_method: Payment = Payment::Debit(100.0);
+  // let payment_method: Payment = Payment::Credit(100.0, String::from("6 installments"));
+  let payment_method: Payment = Payment::Crypto(CryptoData {
+    amount: 0.1,
+    crypto_name: String::from("bitcoin"),
+  });
 
   match payment_method {
     Payment::Cash(amount) => {
@@ -24,8 +25,8 @@ fn main() {
     Payment::Debit(amount) => {
       println!("Debit! {}", amount)
     }
-    Payment::Credit(amount, _) => {
-      println!("Credit! {}", amount)
+    Payment::Credit(amount, num_installments) => {
+      println!("Credit! {} by {} ", amount, num_installments)
     }
     Payment::Crypto(crypto_data) => {
       println!(
@@ -33,10 +34,6 @@ fn main() {
         crypto_data.amount, crypto_data.crypto_name
       )
     }
-    Payment::Pix {
-      account_key,
-      amount,
-    } => println!("Pix! key {} sends {}", account_key, amount),
     _ => println!("Any method"),
   }
 }
