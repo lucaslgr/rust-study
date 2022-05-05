@@ -1,0 +1,1 @@
+/home/guimaraes/projects/rust/course-rust-doung-milford-yt/ownership-and-borrowing/target/debug/ownership-and-borrowing: /home/guimaraes/projects/rust/course-rust-doung-milford-yt/ownership-and-borrowing/src/main.rs
