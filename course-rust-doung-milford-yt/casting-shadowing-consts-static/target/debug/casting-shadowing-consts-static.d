@@ -1,0 +1,1 @@
+/home/guimaraes/projects/rust/course-rust-doung-milford-yt/casting-shadowing-consts-static/target/debug/casting-shadowing-consts-static: /home/guimaraes/projects/rust/course-rust-doung-milford-yt/casting-shadowing-consts-static/src/main.rs
