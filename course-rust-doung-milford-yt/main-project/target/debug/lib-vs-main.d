@@ -1,0 +1,1 @@
+/home/guimaraes/projects/rust/course-rust-doung-milford-yt/main-project/target/debug/lib-vs-main: /home/guimaraes/projects/rust/course-rust-doung-milford-yt/main-project/src/geo_map.rs /home/guimaraes/projects/rust/course-rust-doung-milford-yt/main-project/src/main.rs
