@@ -7,23 +7,37 @@ use std::io; //Importando uma Trait que contem o método gen_range
 fn main() {
     println!("Adivinhe um número!");
 
-    let numero_secreto = rand::thread_rng().gen_range(0..10).to_string();
+    
 
-    println!("Digite o seu palpite: ");
+    loop {
 
-    let mut palpite = String::new();
+        let numero_secreto = rand::thread_rng().gen_range(0..10);
 
-    //OR io::Stdin::stdin().read_line....
-    io::stdin()
-        .read_line(&mut palpite)
-        .expect("Falha ao ler a entrada");
-    // println!(" Você disse: {}", palpite);
+        println!("Digite o seu palpite: ");
 
-    match palpite.cmp(&numero_secreto) {
-        Ordering::Less => println!("Muito baixo"),
-        Ordering::Greater => println!("Muito alto"),
-        Ordering::Equal => println!("Você acertou!"),
+        let mut palpite = String::new();
+
+        //OR io::Stdin::stdin().read_line....
+        io::stdin()
+            .read_line(&mut palpite)
+            .expect("Falha ao ler a entrada");
+        // println!(" Você disse: {}", palpite);
+
+        // let palpite: u32 = palpite.trim().parse().expect("Digite um número!");
+        let palpite: u32 = match palpite.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
+
+        match palpite.cmp(&numero_secreto) {
+            Ordering::Less => println!("Muito baixo"),
+            Ordering::Greater => println!("Muito alto"),
+            Ordering::Equal => {
+                println!("Você acertou!")
+                break;
+            },
+        }
+
+        // println!("O número secreto é: {}", numero_secreto);
     }
-
-    println!("O número secreto é: {}", numero_secreto);
 }
