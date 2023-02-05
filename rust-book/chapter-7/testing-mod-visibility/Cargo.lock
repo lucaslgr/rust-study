@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "comunicator"
+name = "testing-mod-visibility"
 version = "0.1.0"
